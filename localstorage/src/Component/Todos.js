@@ -1,6 +1,6 @@
 import React from "react";
 import { ListGroup, ListGroupItem } from "reactstrap";
-import { FaCheckDouble } from "react-icon/fa";
+import { FaCheckDouble } from "react-icons/fa";
 
 const Todos = ({ todos, markComplete }) => {
   return (

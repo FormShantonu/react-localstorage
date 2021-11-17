@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Container } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -27,7 +27,7 @@ const App = () => {
   },[todos])
 
   const markComplete = id=>{
-    setTodos(todos.filter(todo=>todo.id != id));
+    setTodos(todos.filter(todo=>todo.id !== id));
   }
   return (
     <Container fluid>
